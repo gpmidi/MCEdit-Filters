@@ -1,9 +1,10 @@
 # coding unicode-escape
-# Feel free to modify and use this filter however you wish. If you do, please give credit to SethBling.
-# http://youtube.com/SethBling
-# Modified by Paulson McIntyre <paul@gpmidi.net> https://gpmidi.net
-# Not my best work but whatever
+""" Scoreboard Selector Updator
+Original by SethBling (http://youtube.com/SethBling)
+Heavily modified by Paulson McIntyre <paul@gpmidi.net> (https://gpmidi.net)
 
+GitHub Home: https://github.com/gpmidi/MCEdit-Filters
+"""
 from pymclevel import TAG_List
 from pymclevel import TAG_Byte
 from pymclevel import TAG_Int

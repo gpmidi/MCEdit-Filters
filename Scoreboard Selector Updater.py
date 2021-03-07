@@ -4,6 +4,8 @@ Original by SethBling (http://youtube.com/SethBling)
 Heavily modified by Paulson McIntyre <paul@gpmidi.net> (https://gpmidi.net)
 
 GitHub Home: https://github.com/gpmidi/MCEdit-Filters
+
+(Viewing in github.com as raw and need to download? Hit ctrl-s or super-s! )
 """
 from pymclevel import TAG_List
 from pymclevel import TAG_Byte

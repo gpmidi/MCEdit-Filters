@@ -49,7 +49,7 @@ def things(line, x, minx, maxx, y, miny, maxy, z, minz, maxz):
         for m in ec:
             line = line.replace(m.group("all"), "effect clear %s" % m.group("target"))
 
-    # Effect give
+    # Effect give - Must be after clear
     eg = ReMatchEffectGive.finditer(line)
     if eg:
         for m in ec:

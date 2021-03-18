@@ -23,7 +23,7 @@ displayName = "Scoreboard Selector Updater"
 ReTakeApart = re.compile(r'(?P<all>\@(?P<target>[a-z])\[(?P<args>[^\[\]]+)\])')
 ScoreF = namedtuple('ScoreF', ['key', 'value', 'isMin', 'name'])
 ReEffectClear = re.compile(r'(?P<all>effect\s(?P<target>[^ ]+)\sclear)')
-ReMatchEffectGive = re.compile(r'(?P<all>effect (?!give)(?!clear))')
+ReMatchEffectGive = re.compile(r'(?P<all>effect(?! give)(?! clear))')
 
 
 def perform(level, box, options):
@@ -53,7 +53,7 @@ def things(line, x, minx, maxx, y, miny, maxy, z, minz, maxz):
     eg = ReMatchEffectGive.finditer(line)
     if eg:
         for m in ec:
-            line = line.replace(m.group('all'), "effect give ")
+            line = line.replace(m.group('all'), "effect give")
 
     # Target take apart
     fa = ReTakeApart.finditer(line)
